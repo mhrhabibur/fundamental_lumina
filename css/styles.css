@@ -227,11 +227,15 @@ img {
 .contact_form input[type="submit"] {
   border: 1px solid grey;
   cursor: pointer;
+  transition: background-color 1.0s ease;
+  transition: color 1.0s ease;
+  border-radius: 5px;
 }
 
 .contact_form input[type="submit"]:hover {
   background: #333;
   color: #fff;
+  
 }
 
 
