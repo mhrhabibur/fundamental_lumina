@@ -210,11 +210,31 @@ img {
 .contact_form input {
   padding: 12px 15px;
   margin: 10px;
+  border: none;
+  border-bottom: 1px solid grey;
 }
 .contact_form textarea {
   padding: 12px 15px;
   margin: 10px;
+  border: none;
+  border-bottom: 1px solid grey;
 }
+
+.contact_form input:focus, .contact_form textarea:focus{
+  outline: 0;
+}
+
+.contact_form input[type="submit"] {
+  border: 1px solid grey;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.contact_form input[type="submit"]:hover {
+  background: #333;
+  color: #fff;
+}
+
 
 @media (max-width: 768px) {
   .header .header_flex,
