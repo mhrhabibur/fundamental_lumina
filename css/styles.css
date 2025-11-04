@@ -226,7 +226,6 @@ img {
 
 .contact_form input[type="submit"] {
   border: 1px solid grey;
-  padding: 15px;
   cursor: pointer;
 }
 
@@ -243,6 +242,11 @@ img {
   .service_flex {
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .section_heading {
+    font-size: 1.2rem;
+    margin-top: 50px;
   }
 
   .hero {
