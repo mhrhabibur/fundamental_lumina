@@ -139,13 +139,15 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
-.linkedin:hover,
+
+.facebook:hover,
 .twitter:hover,
 .instagram:hover,
-.facebook:hover {
+.pinterest:hover,
+.tumblr:hover {
   background: #eee;
 }
 
