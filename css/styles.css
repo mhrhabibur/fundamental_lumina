@@ -174,27 +174,28 @@ img {
   background: #eee;
 }
 
+.section-heading {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .services {
-  background: #333;
-  color: #fff;
   padding: 3rem 0 4rem;
 }
 
-.service_flex {
+.services-flex {
   display: flex;
-
   gap: 2rem;
 }
-.service_item h4 {
+
+.service-item h4 {
   font-size: 1.1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 }
 
-.service_item p {
-  font-size: 0.8rem;
-  text-align: justify;
-}
-.section_heading {
+
+.section-heading {
   font-size: 1.6rem;
   text-align: center;
   margin-bottom: 2.5rem;
