@@ -35,27 +35,22 @@ img {
     color: #333;
 }
 
-
 .container {
-  max-width: var(--container_normal);
+  max-width: var(--container-normal);
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-.container_large {
+.container_lg {
   max-width: var(--container_wide);
 }
 
-.container_small {
+.container_sm {
   max-width: var(--container_narrow);
 }
 
 .header {
-  margin: 1.3rem auto;
-
-
-  align-items: center;
-
+  margin: 1.5rem auto;
 }
 
 
