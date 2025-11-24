@@ -8,8 +8,10 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
 }
+
 :root {
   --primary_color: #fcf5e9;
+  --dark-color: #333;
   --container_normal: 1100px;
   --container_wide: 1400px;
   --container_narrow: 900px;
@@ -29,8 +31,10 @@ img {
 }
 
 .bg_primary {
-  background: var(--primary_color);
+    background: var(--primary-color);
+    color: #333;
 }
+
 
 .container {
   max-width: var(--container_normal);
@@ -47,11 +51,16 @@ img {
 }
 
 .header {
-  margin: 1.5rem auto;
+  margin: 1.3rem auto;
+
+
+  align-items: center;
+
 }
 
+
 .header .logo {
-  width: 100px;
+  width: 130px;
 }
 
 .header .header_flex {
@@ -59,6 +68,14 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+
+.header_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 
 .header .main_menu {
   display: flex;
@@ -87,15 +104,15 @@ img {
 }
 
 .hero h2 {
-  font-size: 1.8rem;
-  line-height: 1.4;
-  font-weight: bold;
+  font-size: 3rem;
+    line-height: 1.4;
+    font-weight: normal;
 }
 
 .gallery_flex {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -106,6 +123,11 @@ img {
 
 .gallery_item img {
   border-radius: 8px;
+   border-radius: 10px;
+  height: 300px;      
+  width: 100%;           
+  object-fit: cover; 
+
 }
 
 .gallery_item:hover {
@@ -113,7 +135,7 @@ img {
 }
 
 .footer {
-  border-top: 1px solid #333;
+  border-top: 1px solid #aaa;
   padding: 2rem 1.5rem;
   margin-top: 2rem;
 }
@@ -124,20 +146,26 @@ img {
   align-items: center;
 }
 
+
+
 .footer img {
   width: 120px;
-  height: 30px;
+  height: 35px;
 }
 
 .footer h4 {
-  font-size: 1rem;
+   font-size: 1rem;
   margin-bottom: 0.5rem;
-  text-align: left;
+
+}
+
+.footer a {
+  margin: 0.2rem;
 }
 
 .media {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   gap: 5px;
 }
@@ -207,6 +235,14 @@ img {
   flex-direction: column;
 }
 
+.contact_hero {
+  background-color: rgb(32, 30, 30);
+}
+
+.contact_hero h2 {
+  color: white;
+}
+
 .contact_form input {
   padding: 12px 15px;
   margin: 10px;
@@ -237,6 +273,24 @@ img {
   color: #fff;
   
 }
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+
+/*Media Query*/
 
 
 @media (max-width: 768px) {
